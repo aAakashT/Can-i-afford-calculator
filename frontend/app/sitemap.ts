@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function sitemap(): MetadataRoute.Sitemap { const base = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com"; const pages = ["", "/tools", "/guides", "/about", "/privacy", "/terms", "/disclaimer", "/contact", "/tools/car", "/tools/home", "/tools/phone", "/tools/laptop", "/tools/vacation", "/tools/student-loan"]; return pages.map((path) => ({ url: `${base}${path}`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: path === "" ? 1 : .7 })); }

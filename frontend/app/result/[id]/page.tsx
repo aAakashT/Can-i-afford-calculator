@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function SharedResultPage() { return <main><div className="page-hero"><p className="eyebrow">Private result link</p><h1>Your result is <em>kept private.</em></h1><p>This share link does not contain your salary, expenses, debt, or savings. Reopen the calculator on the device where you made the calculation to view the full result.</p><Link href="/#calculator" className="button button-primary" style={{ marginTop: 20 }}>Open calculator →</Link></div></main>; }
